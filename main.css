@@ -1,41 +1,55 @@
 /* Pon tu código css aqui */
 .color {
-	
-	width: 100px;
-	height: 25px;
-
+	width: 25%;
+	height: 100px;
 }
 
 .grande {
-	
 	border: 1px solid gray;
-	
 }
 
-#yellow {
+.yellow {
 	background:#ffff00;
-
 }
-#blue{
+.blue{
 	background: #3a81ba;
 }
-#pink {
+.pink {
 	background: #ed2251;
 }
 
-/* AGREGANDO FLOAT A LAS CAJAS */
+/* AGREGANDO FLOAT A LAS CAJAS COLOR ERROR RAYITA */
 
-#grandefloat div{
+.float div {
 	float: left;	
 }
 
-/* AGREGANDO FLOAT Y CORRIGIENDO LA CAJA */
-#arreglado div {
+/* AGREGANDO FLOAT Y CORRIGIENDO LA CAJA ELIMINAR RAYITA */
+.arreglado div {
 	
-	float: left;	
+	float: right;	
 }
-
-#arreglado {
-	
+/**  se CORRIGE SOLO PARA LA CAJA LUEGO CONTINUA  **/
+.arreglado {
 	overflow: auto;	
 }
+
+/** sE CORRIGGE PERO DE FORMA ANTIGUA **/
+.separador {
+	clear: both;
+}
+
+/* Lo máximo*/
+.ideal  div {
+	float: left;	
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
